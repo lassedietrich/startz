@@ -1687,7 +1687,7 @@ $("go").onclick=()=>{ S.resp="tap"; start(); };
 $("aboutBtn").onclick=()=>{ hideTip(); $("aboutDlg").hidden=false; $("contactForm").hidden=true; $("contactOpen").hidden=false; $("cStatus").textContent=""; $("aboutClose").focus(); };
 // Kontakt: Nachrichten gehen über einen Formular-Dienst an die hinterlegte Adresse.
 // CONTACT_ENDPOINT wird nach dem Umzug auf eine eigene Webadresse eingetragen (z. B. Web3Forms oder Formspree).
-const CONTACT_ENDPOINT="", CONTACT_KEY="";
+const CONTACT_ENDPOINT="https://api.web3forms.com/submit", CONTACT_KEY="7052fa0d-e455-4188-ba7b-9a7bffa28a1f";
 $("contactOpen").onclick=()=>{ $("contactForm").hidden=false; $("contactOpen").hidden=true; $("cMail").focus(); };
 $("contactForm").addEventListener("submit", async e=>{
   e.preventDefault(); const st=$("cStatus"); const mail=$("cMail").value.trim(), msg=$("cMsg").value.trim();
